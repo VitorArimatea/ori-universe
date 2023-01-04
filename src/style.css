@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Moon+Dance&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navbar, .navbar-list, .pages-navbar, main, .page-section , .box, footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  height: 100vh;
+  flex-direction: column;
+}
+  
+.navbar {
+  font-size: 1.4rem;
+  background-color: #2d2849;
+  color: white;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+}
+  
+.page-section {
+  align-items: center;
+}
+  
+.navbar {
+  height: 10vh;
+}
+  
+.navbar-list, .container {
+  width: 100%;
+}
+  
+.navbar-list {
+  justify-content: space-evenly;
+}
+  
+.pages-navbar {
+    width: 30vw;
+  }
+  
+.list {
+    list-style: none;
+    width: 10vw;
+  }
+  
+.list a {
+  text-decoration: none;
+  color: #fff;
+}
+  
+  .list a:hover {
+    color:#b4b1ad;
+  }
+  
+  main {
+    height: 83vh;
+    align-items: center;
+  }
+ 
+.page-section, footer {
+  justify-content: center;
+}
+  
+  .box {
+    width: 40%;
+  }
+  
+  .home-img, .contact-img, .about-img {
+    height: 65vh;
+    width: auto;
+  }
+  
+  .section-text {
+    width: 75%;
+  }
+  
+  .section-text h2{
+    font-size: 60px;
+    margin: 0;
+  }
+  
+.section-text p{
+  font-size: 30px;
+}
+
+footer {
+  font-size: 1rem;
+  background-color: #12101f;
+  color: white;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  color: #fff;
+}
