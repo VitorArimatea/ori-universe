@@ -3,12 +3,12 @@ export default () => {
     container.classList.add("container");
     
     container.innerHTML = `
-      <section class="page-section">
+      <section class="page_section">
         <figure class="box">
           <img class="home-img shadow" src="assets/home-ori.png">
         </figure>
         <div class="box">
-          <div class="section-text">
+          <div class="section_text">
             <h2>Vamos falar sobre essa obra de arte</h2>
             <p>Ori and the blind forest é um jogo em plataforma, onde você irá se aventurar em cenários mágnificos.<p>
 
