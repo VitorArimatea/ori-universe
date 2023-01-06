@@ -5,7 +5,7 @@ export default () => {
     container.innerHTML = `
       <section class="page-section">
         <figure class="box">
-          <img class="about-img shadow" src="">
+          <img class="about-img shadow" src="assets/about-ori.png">
         </figure>
         <div class="box">
           <div class="section-text">

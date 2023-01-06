@@ -7,14 +7,9 @@
   font-family: 'Rowdies', cursive;
 }
 
-.navbar, .navbar-list, .pages-navbar, main, .page-section , .box, footer {
-  display: flex;
-  justify-content: space-around;
-}
-
 body {
   height: 100vh;
-  flex-direction: column;
+  position: relative;
 }
 
 :root {
@@ -29,24 +24,29 @@ body {
  
 /*--Navbar--*/
 
-.navbar {
-  height: 8vh;
+.nav_bar {
   width: 100%;
-  font-size: 1.2rem;
-  background-color: var(--primary_bg);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: fixed;
+  background-color: #2d2849;
+  padding: 0.3rem;
 }
   
 .navbar-list {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
   
 .list {
-    list-style: none;
-    width: 8vw;
+  display: inline-block;
+  width: 10vw;
 }
   
 .list a {
+  font-size: 1.2rem;
   text-decoration: none;
   color: var(--primary_text);
   transition: .3s ease-in-out;
@@ -56,32 +56,52 @@ body {
   color: var(--secondary_text);
 }
 
+.pages-navbar {
+  width: 50%;
+}
+
 /*--Pages--*/
 
 main {
   height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  position: absolute;
 }
  
 .page-section {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 4rem;
 }
   
 .box {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
   
 .home-img, .contact-img, .about-img {
-  height: 70vh;
+  height: 40vh;
   width: auto;
 }
   
 .section-text {
-  width: 90%;
+  background-color: #7b0386;
+  color: var(--primary_text);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  text-align: justify;
 }
   
 .section-text h2{
   font-size: 3rem;
+  margin-top: 1rem;
 }
   
 .section-text p{
@@ -89,11 +109,11 @@ main {
 }
 
 footer {
+  height: 10%;
+  width: 100%;
   font-size: 1rem;
   background-color: var(--secondary_bg);
   color: white;
-  height: 7vh;
-  align-items: center;
 }
 
 footer > p, a {
